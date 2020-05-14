@@ -4,25 +4,29 @@
             <h3 class="has-info">{{validMessage}}</h3>
         </div>
         <div class="form-group">
-            <label>Buyer Name: </label>
+            <label style="color: red;">*</label>
+            <label> Buyer Name: </label>
             <input type="text" class="form-control" formControlName="name" required autofocus/>
-            <label style="color: red;"> * </label>
+            
 
         </div>
         <div class="form-group">
-            <label>Email: </label>
+            <label style="color: red;">*</label>
+            <label> Email: </label>
             <input type="email" class="form-control" formControlName="email" required/>
-            <label style="color: red;"> * </label>
+        
 
         </div>
         <div class="form-group">
-            <label>Phone: </label>
+            <label style="color: red;">*</label>
+            <label> Phone: </label>
             <input type="text" class="form-control" formControlName="phone" required/>
-            <label style="color: red;"> * </label>
+        
 
         </div>
         <div class="form-group">
-            <label>Bike Model: </label>
+            <label style="color: red;">*</label>
+            <label> Bike Model: </label>
             <select class="form-control" formControlName="model" required>
           <option value="">Please select a bike: </option>
           <option *ngFor="let m of models"
@@ -30,25 +34,28 @@
                   {{m}}
           </option>
         </select>
-            <label style="color: red;"> * </label>
+         
 
         </div>
         <div class="form-group">
-            <label>Bike Serial Number: </label>
+            <label style="color: red;">*</label>
+             <label> Bike Serial Number: </label>
             <input type="text" class="form-control" formControlName="serialNumber" required/>
-            <label style="color: red;"> * </label>
+        
 
         </div>
         <div class="form-group">
-            <label>Purchase Price: </label>
+            <label style="color: red;">*</label>
+            <label> Purchase Price: </label>
             <input type="text" class="form-control" formControlName="purchasePrice" required/>
-            <label style="color: red;"> * </label>
+       
 
         </div>
         <div class="form-group">
-            <label>Purchase Date: </label>
+            <label style="color: red;">*</label>
+             <label> Purchase Date: </label>
             <input type="text" class="form-control" formControlName="purchaseDate" required/>
-            <label style="color: red;"> * </label>
+        
 
         </div>
 

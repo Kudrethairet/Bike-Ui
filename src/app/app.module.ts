@@ -9,13 +9,15 @@ import {BikeService} from './services/bike.service';
 import { AdminComponent } from './components/admin/admin.component'
 import { RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
+import { ViewRegistrationComponent } from './components/view-registration/view-registration.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AdminComponent,
-    HomeComponent
+    HomeComponent,
+    ViewRegistrationComponent
   ],
   imports: [
     BrowserModule,
