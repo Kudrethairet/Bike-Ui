@@ -26,5 +26,23 @@ export class AdminComponent implements OnInit {
     );
   }
 
+  MyClickFunction(id: number){
+  if(confirm("are you sure to delete this item?")){
+    console.log("delete");
+    this.deleteBikeReg(id);
+  }
+  }
+
+  deleteBikeReg(id: number){
+    this.bikeService.deleteBike(id).subscribe(
+        data=> {
+          this.bikes=data;
+          window.location.reload();
+        },
+        err=>console.log(err),
+        () => console.log("deleted")
+        
+    );
+  }
 
 }

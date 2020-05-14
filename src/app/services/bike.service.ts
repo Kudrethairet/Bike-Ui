@@ -18,7 +18,7 @@ export class BikeService {
   }
 
   getBike(id: number){
-    return this.http.get('/server/api/v1/bikes/'+id);
+    return this.http.get('/server/api/v1/bikes/' +id);
   }
 
   createBikeRegistration(bike){
@@ -26,4 +26,18 @@ export class BikeService {
    // return this.http.post('/server/api/v1/bikes', body, httpOptions);
    return this.http.post('/server/api/v1/bikes', body, httpOptions);
   }
+
+  UpdateBikeRegistration(id:number, bike){
+    let body=JSON.stringify(bike);
+   // return this.http.post('/server/api/v1/bikes', body, httpOptions);
+   //console.log(body)
+   return this.http.put('/server/api/v1/bikes/' +id, body,  httpOptions);
+
+  }
+
+
+  deleteBike(id: number){
+    return this.http.delete('/server/api/v1/bikes/' +id);
+  }
+
 }

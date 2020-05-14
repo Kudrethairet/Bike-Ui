@@ -51,5 +51,11 @@ export class HomeComponent implements OnInit {
       this.validMessage= " please fill out the form before submitting!"
     }
   }
+  MyClickFunction(even){
+    alert("are you sure you wanna delete this item?");
+  }
+
+
+
 
 }

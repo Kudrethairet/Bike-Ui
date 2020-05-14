@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ViewRegistrationComponent } from './view-registration.component';
+import { $ } from 'protractor';
 
 describe('ViewRegistrationComponent', () => {
   let component: ViewRegistrationComponent;
@@ -23,3 +24,13 @@ describe('ViewRegistrationComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+function checkFeild(text: string){
+   
+
+    
+  console.log(2)
+
+
+
+}

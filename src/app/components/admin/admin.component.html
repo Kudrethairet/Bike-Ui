@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="container">
     <table class="table table-bordered table-inverse">
         <tr>
@@ -5,10 +6,11 @@
             <th>Email</th>
             <th>Model</th>
             <th class="text-right">Purchase Price</th>
+            <th>actions</th>
         </tr>
         <tr *ngFor="let bike of bikes">
             <td>
-               <a [routerLink]="['/admin/view', bike.id]">{{bike.name}}</a>
+               {{bike.name}}
             </td>
             <td>
                 {{bike.email}}
@@ -18,6 +20,17 @@
             </td>
             <td class="text-right">
                 {{bike.purchasePrice}}
+            </td>
+            <td>
+                <div class="action_icons">
+                    <a  [routerLink]="['/admin/view', bike.id]" class="btn btn-primary" type="button"> Edit</a>
+                    <div class="emptys">  &nbsp;</div>
+                    <button (click)="MyClickFunction(bike.id)" class="btn btn-danger" type="button"> Delete</button>
+
+                    
+               
+            </div>
+           
             </td>
         </tr>
     </table>

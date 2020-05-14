@@ -11,7 +11,6 @@ import { RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
 import { ViewRegistrationComponent } from './components/view-registration/view-registration.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,

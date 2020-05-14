@@ -1,0 +1,11 @@
+
+
+.action_icons{
+    display: flex;
+    justify-content: space-around;
+}
+.btn btn-primary ,.btn btn-danger{
+    display: flex;
+
+    border: 5px solid;
+}

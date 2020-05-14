@@ -1,0 +1,36 @@
+
+.btn btn-primary {
+   text-align: right;
+  }
+
+
+
+  #submit:hover:before{
+      
+}
+.action_icon{
+  display: flex;
+}
+
+#edit{
+  margin: cm;
+  height: 1cm;
+  text-align: right;
+
+}
+#submit{
+  margin: cm;
+  height: 1cm;
+position: static;
+  text-align: right;
+
+}
+
+
+#navigateBack{
+  margin: cm;
+  height: 1cm;
+
+
+  text-align: right;
+}
